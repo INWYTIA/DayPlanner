@@ -1,21 +1,119 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>
-            Day Planner
-        </title>
-        <script src="moment.js"></script>
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
-    </head>
-    <body>
-        <header>
-            
-        </header>
-        <div class="container">
-            
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Work Day Scheduler</title>
+  </head>
+
+  <body>
+    <header class="jumbotron">
+      <h1 class="display-3">Work Day Scheduler</h1>
+      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <p id="currentDay" class="lead"></p>
+    </header>
+    <div class="container">
+        <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text time-block digitPad">9 AM</span>
+            </div>
+            <textarea class="form-control" aria-label="With textarea" id="9am" value=09></textarea>
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary saveBtn" type="button">Save</button>
+            </div>
         </div>
-    </body>
+        <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text time-block">10 AM</span>
+            </div>
+            <textarea class="form-control" aria-label="With textarea" id="10am" value=10></textarea>
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary saveBtn" type="button">Save</button>
+            </div>
+        </div>
+        <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text time-block">11 AM</span>
+            </div>
+            <textarea class="form-control" aria-label="With textarea" id="11am" value=11></textarea>
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary saveBtn" type="button">Save</button>
+            </div>
+        </div>
+        <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text time-block">12 PM</span>
+            </div>
+            <textarea class="form-control" aria-label="With textarea" id="12pm" value=12></textarea>
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary saveBtn" type="button">Save</button>
+            </div>
+        </div>
+        <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text time-block digitPad">1 PM</span>
+            </div>
+            <textarea class="form-control" aria-label="With textarea" id="1pm" value=13></textarea>
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary saveBtn" type="button">Save</button>
+            </div>
+        </div>
+        <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text time-block digitPad">2 PM</span>
+            </div>
+            <textarea class="form-control" aria-label="With textarea" id="2pm" value=14></textarea>
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary saveBtn" type="button">Save</button>
+            </div>
+        </div>
+        <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text time-block digitPad">3 PM</span>
+            </div>
+            <textarea class="form-control" aria-label="With textarea" id="3pm" value=15></textarea>
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary saveBtn" type="button">Save</button>
+            </div>
+        </div>
+        <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text time-block digitPad">4 PM</span>
+            </div>
+            <textarea class="form-control" aria-label="With textarea" id="4pm" value=16></textarea>
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary saveBtn" type="button">Save</button>
+            </div>
+        </div>
+        <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text time-block digitPad">5 PM</span>
+            </div>
+            <textarea class="form-control" aria-label="With textarea" id="5pm" value=17></textarea>
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary saveBtn" type="button">Save</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  </body>
     <script type="text/javascript" src="script.js"></script>
 </html>
